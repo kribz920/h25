@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<button id="Fotohide1">Verberg foto 1</button>
+		<img class="foto1" src="foto1.jpg" alt="foto1" />
+
+		<button id="Fotohide2">Verberg foto 2</button>
+		<img class="foto2" src="foto2.jpg" alt="foto2" />
+		<noscript>
+			Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te
+			activeren.
+		</noscript>
+
+		<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#Fotohide1").click(function () {
+					$(".foto1").fadeToggle();
+				});
+			});
+
+			$(document).ready(function () {
+				$("#Fotohide2").click(function () {
+					$(".foto2").fadeToggle();
+				});
+			});
+		</script>
+	</body>
+</html>

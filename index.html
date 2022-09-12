@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JQuery</title>
+		<title>Document</title>
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div class="container"></div>
 		<button id="Fotohide1">Verberg foto 1</button>
 		<img class="foto1" src="foto1.jpg" alt="foto1" />
 
@@ -23,21 +24,14 @@
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#Fotohide1").click(function () {
-					$(".foto1").fadein();
-					
+					$(".foto1").fadeToggle();
 				});
-				$("#Fotohide1").click(function () {
-					$(".foto1").fadeout();
-				});
-				
 			});
 
 			$(document).ready(function () {
 				$("#Fotohide2").click(function () {
-					$(".foto2").fadein();
+					$(".foto2").fadeToggle();
 				});
-				]$("#Fotohide2").click(function () {
-					$(".foto2").fadeout();
 			});
 		</script>
 	</body>
